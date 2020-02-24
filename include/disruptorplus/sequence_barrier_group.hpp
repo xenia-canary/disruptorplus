@@ -161,6 +161,8 @@ namespace disruptorplus
         {
             assert(!m_sequences.empty());
             
+            size_t count = m_sequences.size();
+
             sequence_t current = minimum_sequence_after(sequence, count, m_sequences.data());
             if (difference(current, sequence) >= 0)
             {
@@ -199,6 +201,8 @@ namespace disruptorplus
         {
             assert(!m_sequences.empty());
             
+            size_t count = m_sequences.size();
+
             sequence_t current = minimum_sequence_after(sequence, count, m_sequences.data());
             if (difference(current, sequence) >= 0)
             {
