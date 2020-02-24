@@ -1,7 +1,7 @@
 #ifndef DISRUPTORPLUS_SEQUENCE_RANGE_HPP_INCLUDED
 #define DISRUPTORPLUS_SEQUENCE_RANGE_HPP_INCLUDED
 
-#include <disruptorplus/sequence.hpp>
+#include "sequence.hpp"
 
 namespace disruptorplus
 {

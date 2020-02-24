@@ -1,10 +1,10 @@
 #ifndef DISRUPTORPLUS_MULTI_THREADED_CLAIM_STRATEGY_HPP_INCLUDED
 #define DISRUPTORPLUS_MULTI_THREADED_CLAIM_STRATEGY_HPP_INCLUDED
 
-#include <disruptorplus/config.hpp>
-#include <disruptorplus/sequence_barrier.hpp>
-#include <disruptorplus/sequence_barrier_group.hpp>
-#include <disruptorplus/sequence_range.hpp>
+#include "config.hpp"
+#include "sequence_barrier.hpp"
+#include "sequence_barrier_group.hpp"
+#include "sequence_range.hpp"
 
 #include <atomic>
 #include <chrono>

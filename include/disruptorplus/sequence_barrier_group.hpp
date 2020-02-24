@@ -1,8 +1,8 @@
 #ifndef DISRUPTORPLUS_SEQUENCE_BARRIER_GROUP_HPP_INCLUDED
 #define DISRUPTORPLUS_SEQUENCE_BARRIER_GROUP_HPP_INCLUDED
 
-#include <disruptorplus/sequence.hpp>
-#include <disruptorplus/sequence_barrier.hpp>
+#include "sequence.hpp"
+#include "sequence_barrier.hpp"
 
 #include <cassert>
 #include <chrono>

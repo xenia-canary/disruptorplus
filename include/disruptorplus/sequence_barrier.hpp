@@ -1,8 +1,8 @@
 #ifndef DISRUPTORPLUS_SEQUENCE_BARRIER_HPP_INCLUDED
 #define DISRUPTORPLUS_SEQUENCE_BARRIER_HPP_INCLUDED
 
-#include <disruptorplus/config.hpp>
-#include <disruptorplus/sequence.hpp>
+#include "config.hpp"
+#include "sequence.hpp"
 
 #include <atomic>
 #include <chrono>

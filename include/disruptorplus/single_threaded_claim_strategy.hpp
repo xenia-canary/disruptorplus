@@ -1,9 +1,9 @@
 #ifndef DISRUPTORPLUS_SINGLE_THREADED_CLAIM_STRATEGY_HPP_INCLUDED
 #define DISRUPTORPLUS_SINGLE_THREADED_CLAIM_STRATEGY_HPP_INCLUDED
 
-#include <disruptorplus/sequence_range.hpp>
-#include <disruptorplus/sequence_barrier.hpp>
-#include <disruptorplus/sequence_barrier_group.hpp>
+#include "sequence_range.hpp"
+#include "sequence_barrier.hpp"
+#include "sequence_barrier_group.hpp"
 
 #include <algorithm>
 #include <chrono>

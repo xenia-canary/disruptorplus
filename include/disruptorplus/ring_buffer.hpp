@@ -1,7 +1,7 @@
 #ifndef DISRUPTORPLUS_RING_BUFFER_HPP_INCLUDED
 #define DISRUPTORPLUS_RING_BUFFER_HPP_INCLUDED
 
-#include <disruptorplus/sequence.hpp>
+#include "sequence.hpp"
 
 #include <memory>
 #include <cassert>

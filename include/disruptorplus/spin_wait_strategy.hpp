@@ -1,8 +1,8 @@
 #ifndef DISRUPTORPLUS_SPIN_WAIT_STRATEGY_HPP_INCLUDED
 #define DISRUPTORPLUS_SPIN_WAIT_STRATEGY_HPP_INCLUDED
 
-#include <disruptorplus/spin_wait.hpp>
-#include <disruptorplus/sequence.hpp>
+#include "spin_wait.hpp"
+#include "sequence.hpp"
 
 #include <chrono>
 #include <atomic>

@@ -1,7 +1,7 @@
 #ifndef DISRUPTORPLUS_BLOCKING_WAIT_STRATEGY_HPP_INCLUDED
 #define DISRUPTORPLUS_BLOCKING_WAIT_STRATEGY_HPP_INCLUDED
 
-#include <disruptorplus/sequence.hpp>
+#include "sequence.hpp"
 
 #include <atomic>
 #include <cassert>
