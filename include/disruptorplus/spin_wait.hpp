@@ -3,8 +3,16 @@
 
 #include <thread>
 
-#ifdef _MSC_VER
-# include <intrin.h>
+#if defined(_M_IX86) || defined(_M_AMD64) || defined(__i386__) || defined(__amd64__)
+# define DISRUPTORPLUS_ARCH_X86
+# include <immintrin.h>
+#endif
+
+#if defined(_M_ARM) || defined(_M_ARM64) || defined(__arm__) || defined(__aarch64__)
+# define DISRUPTORPLUS_ARCH_ARM
+# ifdef _MSC_VER
+#  include <intrin.h>
+# endif
 #endif
 
 namespace disruptorplus
@@ -108,8 +116,14 @@ namespace disruptorplus
         static void yield_processor()
         {
             // Ideally we want to put this processor into idle mode for a few cycles.
-#if defined(_MSC_VER) && (defined(_M_IX86) || defined(_M_X64))
+#if defined(DISRUPTORPLUS_ARCH_X86)
             _mm_pause();
+#elif defined(DISRUPTORPLUS_ARCH_ARM)
+# if defined(_MSC_VER)
+            __yield();
+# else
+            __asm__ volatile("yield" ::: "memory");
+# endif
 #endif
         }
     
