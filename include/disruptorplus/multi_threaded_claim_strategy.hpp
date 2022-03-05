@@ -525,7 +525,7 @@ namespace disruptorplus
                     const std::atomic<sequence_t>* const sequences[1] =
                         { &m_published[seq & m_indexMask] };
                     sequence_t result =
-                        m_waitStrategy.wait_until_published(seq, 1, sequences);
+                        m_waitStrategy.wait_until_published(seq, 1, sequences, timeoutTime);
                     if (difference(result, seq) < 0)
                     {
                         // Timeout. seq is the first non-published sequence
